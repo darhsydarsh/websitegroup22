@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Monopoly Page</title>
+        <link rel="stylesheet" type="text/css" href="mainwebpagecss.css"> </link>
+      </head>
+      <body>
+          <div class="topnav">
+            <ul>
+              <div class="logo">
+                  <img src="photos/redDicelogo.png" alt="Logo">
+              </div>
+                  <li><a href="mainwebpage.html">home</a></li>
+                  <li><a href="information.html">information</a></li>
+                  <li><a href="login.html">log in</a></li>
+                  <li><a href="  ">language = eng</a></li>
+                  <li><a href="cart.html">cart</a></li>  
+              </ul>   
+          </div>
+    
+    
+        <dev class="item">
+        <main>
+          <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            </head>
+            <body>
+            
+            <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="Photos/monopoly.jpeg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="Photos/frontMonopoly.jpg" style="width:100%">
+            </div>
+          
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / </div>
+              <img src="Photos/playMonopoly.jpeg" style="width:100%">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+            <p>Monopoly Classic | £24.99
+              <br><br>
+        
+              <br>
+              <input type="radio" name="Permission" value="Yes" checked>Delivery
+              <input type="radio" name="Permission" value="No" checked>Click & Collect
+              <br><br>
+              <button type="button">Add to Cart</button>
+            </p>
+
+            <h2>Product Description</h2>
+                <p>Build a property empire in the iconic Monopoly board game.
+                <br>
+                Your fortunes could change with the roll of the dice as you move around the board developing properties, paying rent, drawing Chance cards and passing Go. Will you bankrupt your opponents, go to jail, or lose it all?
+                <br>
+                Monopoly Classic sees players collecting property colour sets to start their empire. When you own all the properties in a colour group, you can start to build houses. The more you build, the higher the rent players who land on your property have to pay. Once a player has 4 houses on each property of a group, they can start building hotels to rake in even higher rents.
+                <br>
+                But other players are building their own empires – and if you can’t pay their rent, you could lose it all.
+                <br>
+                The Monopoly Classic game now features an updated line up of tokens, with the Rubber Ducky, T-Rex and Penguin now starring alongside old favourites like the Dog and Top Hat.
+                </p>
+
+                <h2>Features</h2>
+                    <ul>
+                    <li>The fast-dealing property game</li>
+                    <li>Players buy, sell and trade to win</li>
+                    <li>Collect the cards you need to build houses and hotels</li>
+                    <li>For 2 to 6 players</li>
+                    <li>Styles may vary</li>
+                    <li>Contents: 1x Monopoly game board, 8x tokens, 60x cards, 32x houses, 12x hotels, 2x dice, 1x money pack & 1x game guide</li>
+                </ul>
+               
+        </main>
+        </dev>
+    </body>
+</html>

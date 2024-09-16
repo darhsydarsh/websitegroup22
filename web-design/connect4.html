@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>UnoNoMercy Page</title>
+        <link rel="stylesheet" type="text/css" href="mainwebpagecss.css"> </link>
+
+      </head>
+      <body>
+          <div class="topnav">
+            <ul>
+              <div class="logo">
+                <img src="photos/redDicelogo.png" alt="Logo">
+              </div>
+                  <li><a href="mainwebpage.html">home</a></li>
+                  <li><a href="information.html">information</a></li>
+                  <li><a href="login.html">log in</a></li>
+                  <li><a href="  ">language = eng</a></li>
+                  <li><a href="cart.html">cart</a></li>  
+              </ul>   
+          </div>
+    
+    
+        <dev class="item">
+        <main>
+          <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            </head>
+            <body>
+            
+            <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="Photos/connect4.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="Photos/connect4.1.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="Photos/connect4.2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 5</div>
+              <img src="Photos/connect4.3.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 5</div>
+                <img src="Photos/connect4.4.png" style="width:100%">
+              </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+            <p>Connect 4 | £9.99
+              <br><br>
+        
+              <br>
+              <input type="radio" name="Permission" value="Yes" checked>Delivery
+              <input type="radio" name="Permission" value="No" checked>Click & Collect
+              <br><br>
+              <button type="button">Add to Cart</button>
+            </p>
+
+            <h2>Product Description</h2>
+            <p>
+                The classic Connect 4 game now features 3 ways to play, bringing you even more disc-dropping fun.
+                <br><br>
+                Connect 4 Classic
+                <br><br>
+                Line up 4 discs of the same colour to win! Play as gold or red and drop one of your discs into the grid at each turn. You can stack the 4 discs vertically, side by side, or diagonally – just don’t forget to block your opponent!
+                <br><br>
+                Connect 4 Frenzy
+                <br><br>
+                Ready, set, drop! In this version of the Connect 4 game, both players drop their discs at the same time, using one hand only. Can you think fast enough to line up 4 of your discs in this free-for-all frenzy?
+                <br><br>
+                New Connect 4
+                <br><br>
+                Will you use your move to add a disc or take one away? The aim of the game is still to line up 4 of your discs – but now you can choose to pop a disc out of the bottom row on your go, changing the pattern above. With more ways to move come brand new strategy challenges, changing the shape of the game.
+            </p>
+
+                <h2>Features</h2>
+                    <ul>
+                    <li>For 2 players</li>
+                    <li>Contents: Connect 4 game</li>
+                    <li>Choose your colour – yellow or red?</li>
+                    <li>Get 4 discs in a row to win!-dropping fun</li>
+                    <li>Now with 3 ways to play</li>
+                    <li>Frame dimensions: 28L x 10W x 25Hcm</li>
+                    <li>Batteries Not Required</li>
+                </ul>
+               
+        </main>
+      </dev>
+    </body>
+</html>

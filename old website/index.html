@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    #css ul {
+      list-style-type: none;
+      margin: 0;
+      § padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: salmon;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111;
+    }
+
+    img {
+      border-radius: 50%;
+    }
+
+    h2 {
+      text-decoration-line: underline;
+      letter-spacing: 5px;
+      font-family: "Times New Roman", Times, serif;
+    }
+
+
+    body {
+      background-image: url('colourbg.png');
+      ;
+
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    img:hover {
+      box-shadow: 0 0 10px 10px rgba(0, 140, 186, 0.5);
+      animation: shake 0.5s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translate(1px, 1px) rotate(0deg);
+      }
+
+      10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+      }
+
+      20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+      }
+
+      30% {
+        transform: translate(3px, 2px) rotate(0deg);
+      }
+
+      40% {
+        transform: translate(1px, -1px) rotate(1deg);
+      }
+
+      50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+      }
+
+      60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+      }
+
+      70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+      }
+
+      80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+      }
+
+      90% {
+        transform: translate(1px, 2px) rotate(0deg);
+      }
+
+      100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+      }
+    }
+  </style>
+
+  <ul>
+    <li><a href="ice.html">ice cream?</a></li>
+    <li><a href="news.html">bout me</a></li>
+    <li><a href="new.html">my show off place</a></li>
+    <li><a href="Pictures.html">some pics i took</a></li>
+    <img src="Pfp.jpeg" alt="Avatar" class="center" height="128" width="">
+  </ul>
+  <h2 style="color:#CB4335  ;font-size:200%;text-align:center;">Adarsh</h2>
+
+</head>
+
+
+
+
+
+
+
+
+
+
+<body>
+   <h1 id = "header"></h1>
+
+    <script>
+        let colour = "red";
+        const resultText = document.getElementById("result");
+        function favcolour(){
+            
+
+            if (colour == "red"){
+                resultText.innerHTML = "thy is not indeed not not a favorite colour of mine, not, i mean not, actually no, but yes, no, mostly likely yes, no, no yes";
+
+            } else{
+                alert("aint no work");
+
+            }
+            function timestable(){
+                for(let i = 0; i <=12; i++){
+                    resulttext.innerHTML = i * 6;
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>

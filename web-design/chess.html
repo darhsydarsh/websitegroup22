@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scrabble Page</title>
+        <link rel="stylesheet" type="text/css" href="mainwebpagecss.css"> </link>
+      </head>
+      <body>
+          <div class="topnav">
+            <ul>
+              <div class="logo">
+                <img src="photos/redDicelogo.png" alt="Logo">
+              </div>
+                  <li><a href="mainwebpage.html">home</a></li>
+                  <li><a href="information.html">information</a></li>
+                  <li><a href="login.html">log in</a></li>
+                  <li><a href="  ">language = eng</a></li>
+                  <li><a href="cart.html">cart</a></li>  
+              </ul>   
+          </div>
+    
+        <!-- The main content of the page -->
+      <dev class="item">
+        <main>
+          <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            </head>
+            <body>
+            
+            <div class="item">
+              
+              <div class="slideshow-container">
+              
+              <div class="mySlides fade">
+                <div class="numbertext">1 / 7</div>
+                <img src="Photos/chess.png" style="width:100%">
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">2 / 7</div>
+                <img src="Photos/chess1.png" style="width:100%">
+              </div>
+              
+              <div class="mySlides fade">
+                <div class="numbertext">3 / 7</div>
+                <img src="Photos/chess2.png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">4 / 7</div>
+                <img src="Photos/chess3.png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="Photos/chess4.png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                  <div class="numbertext">6 / 7</div>
+                  <img src="Photos/chess5.png" style="width:100%">
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">7 / 7</div>
+                  <img src="Photos/chess6.png" style="width:100%">
+                </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+              
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>     
+              </div>
+
+              <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+
+              <p>Grand Classic Acacia Mahogany Chess Set & Box | £124.99
+                <br><br>
+          
+                <br>
+                <input type="radio" name="Permission" value="Yes" checked>Delivery
+                <input type="radio" name="Permission" value="No" checked>Click & Collect
+                <br><br>
+                <button type="button">Add to Cart</button>
+              </p>
+
+              <h2>Product Description</h2>
+                  <p>
+                      Hone your strategy and decision-making skills with this Deluxe Wooden Chess Set. In a game of chess, each figure moves in a different way as both players play to place their opponent’s king piece in checkmate. It’s a excellent way to help improve your memory skills, concentration and problem solving.
+                      <br><br>
+                      The Deluxe Wooden Chess Set features a classic wooden game board with an ornate trim and Staunton style game pieces. This luxurious wooden chessboard folds like a book, with a magnetic closure for convenient storage on your bookshelf. Simply secure the chess pieces inside with the elastic piece holders.
+                  </p>
+
+                  <h2>Features</h2>
+                      <ul>
+                      <li>Contents: Wooden Chessboard, 32 chess pieces</li>
+                      <li>Chess set with a classic wooden design</li>
+                      <li>Ornate trim and Staunton style game pieces</li>
+                      <li>Store your pieces inside the chessboard box</li>
+                      <li>For 2 players</li>
+                      <li>Board dimensions: 19 x 19 x 0.6 inches</li>
+                  </ul>
+                
+          </main>
+        </dev>
+      </div>
+    </body>
+</html>

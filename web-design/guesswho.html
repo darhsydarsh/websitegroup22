@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guess Who? Page</title>
+        <link rel="stylesheet" type="text/css" href="mainwebpagecss.css"> </link>
+      </head>
+      <body>
+          <div class="topnav">         
+              <ul>
+                <div class="logo">
+                  <img src="photos/redDicelogo.png" alt="Logo">
+                </div>
+                  <li><a href="mainwebpage.html">home</a></li>
+                  <li><a href="information.html">information</a></li>
+                  <li><a href="login.html">log in</a></li>
+                  <li><a href="  ">language = eng</a></li>
+                  <li><a href="cart.html">cart</a></li>  
+              </ul>   
+          </div>
+    
+        <dev class="item">
+        <main>
+          <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            </head>
+            <body>
+            
+            <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 7</div>
+              <img src="Photos/guesswho.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 7</div>
+              <img src="Photos/guesswho1.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 7</div>
+              <img src="Photos/guesswho2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 7</div>
+              <img src="Photos/guesswho3.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">5 / 7</div>
+                <img src="Photos/guesswho4.png" style="width:100%">
+              </div>
+            
+              <div class="mySlides fade">
+                <div class="numbertext">6 / 7</div>
+                <img src="Photos/guesswho5.png" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <div class="numbertext">7 / 7</div>
+                <img src="Photos/guesswho6.png" style="width:100%">
+              </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>
+              <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+            <p>Guess Who? | £13.99
+              <br><br>
+        
+              <br>
+              <input type="radio" name="Permission" value="Yes" checked>Delivery
+              <input type="radio" name="Permission" value="No" checked>Click & Collect
+              <br><br>
+              <button type="button">Add to Cart</button>
+            </p>
+
+            <h2>Product Description</h2>
+                <p>
+                    The Guess Who? game is a classic tabletop guessing game for kids.
+                    <br><br>
+                    Choose the red board or the blue, and pick a mystery Guess Who? character. Players take turns asking yes or no questions to try and name their opponent’s mystery character. Do they have a beard? Brown eyes? What about a hat?
+                    <br><br>
+                    Close the doors as you rule out characters. Once you think you know who’s on your opponent’s card, make your guess. But beware – if the guess is wrong, you lose the game!
+                    <br><br>
+                    Players can use the scorekeepers to challenge opponents to a series of games in which the first player to win 5 games is the Guess Who? game champion. Please note that styles may vary.
+                </p>
+
+                <h2>Features</h2>
+                    <ul>
+                    <li>Contents: 2 Guess Who? game boards, 48 face cards, 24 mystery cards, 2 scorekeepers and instructions</li>
+                    <li>Race to guess the character on your opponent’s card</li>
+                    <li>Ask the right questions to rule out your suspects</li>
+                    <li>Flip down the characters until you have your guess</li>
+                    <li>Print more characters for more possibilities</li>
+                    <li>Guess Who? game for 2 players</li>
+                    <li>Contents: 2x Guess Who? game boards, 48x face cards, 24x mystery cards, 2x scorekeepers & 1x instructions</li>
+                    <li>Board dimensions: 16L x 24W x 24H cm</li>
+                </ul>
+               
+        </main>
+      </dev>
+    </body>
+</html>

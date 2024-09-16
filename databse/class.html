@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> </link>
+</head>
+<body>
+    <div class="topnav">
+        <ul>
+            <li><a href="teacher.html">teacher</a></li>
+            <li><a href="class.html">class</a></li>
+            <li><a href="student.html">student</a></li>
+            <li><a href="emergencycontact.html">emergency contact</a></li>
+            <li><a href="department.html">department</a></li>
+            <li><a href="subject.html">subject</a></li>
+            <li><a href="society.html">society</a></li>
+            
+        </ul>   
+    </div>
+
+<h2>class</h2>
+
+<form method="post" action="class.php">
+    <label for="classID">classID</label><br>
+    <input type="text" id="classID" name="classID" value=""><br>
+
+    <label for="startTime">start time</label><br>
+    <input type="time" id="startTime" name="startTime" value=""><br><br>
+
+    <label for="endTime">end time</label><br>
+    <input type="time" id="endTime" name="endTime" value=""><br><br>
+
+    <label for="capacity">capacity:</label><br>
+    <input type="text" id="capacity" name="capacity" value=""><br><br>
+
+  <label for="subjectName">subject name:</label><br>
+  <input type="text" id="subjectName" name="subjectName" value=""><br><br>
+
+  <input type="submit" value="Submit">
+</form>
+
+
+</body>
+</html>

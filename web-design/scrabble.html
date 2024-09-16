@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Scrabble Page</title>
+        <link rel="stylesheet" type="text/css" href="mainwebpagecss.css"> </link>
+      </head>
+      <body>
+          <div class="topnav">
+            <ul>
+              <div class="logo">
+                  <img src="photos/redDicelogo.png" alt="Logo">
+              </div>
+                  <li><a href="mainwebpage.html">home</a></li>
+                  <li><a href="information.html">information</a></li>
+                  <li><a href="login.html">log in</a></li>
+                  <li><a href="  ">language = eng</a></li>
+                  <li><a href="cart.html">cart</a></li>  
+              </ul>   
+          </div>
+    
+        <dev class="item">
+        <main>
+          <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            </head>
+            <body>
+            
+            <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 6</div>
+              <img src="Photos/scrabble.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 6</div>
+              <img src="Photos/scrabble1.png" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 6</div>
+              <img src="Photos/scrabble2.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 6</div>
+              <img src="Photos/scrabble3.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 6</div>
+              <img src="Photos/scrabble4.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">6 / 6</div>
+                <img src="Photos/scrabble5.png" style="width:100%">
+              </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+              <span class="dot" onclick="currentSlide(6)"></span>    
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+            <p>Scrabble Original | £23.99
+              <br><br>
+        
+              <br>
+              <input type="radio" name="Permission" value="Yes" checked>Delivery
+              <input type="radio" name="Permission" value="No" checked>Click & Collect
+              <br><br>
+              <button type="button">Add to Cart</button>
+
+            </p>
+
+            <h2>Product Description</h2>
+                <p>The Original Scrabble Word Game from Mattel Games is the world's most popular word game. Players build interlocking words crossword-style on the Scrabble playing board.
+                    <br><br>
+                    How to Play Scrabble
+                    <br>
+                    Scrabble players draw seven letter tiles from the bag and try to make the best word using any of their tiles. The object of the Original Scrabble Word Game is to get the highest score. Each letter's unique value determines the points a player receives for their word.
+                    <br><br>
+                    Rack Up Your Points!
+                    <br>
+                    When playing the Original Scrabble Word Game, be sure to make the most of your board. More points are awarded when a word uses the triple letter, double word or even triple word squares on the grid.
+                </p>
+
+                <h2>Features</h2>
+                    <ul>
+                    <li>Boost your vocabulary while you play</li>
+                    <li>Each letter has a unique value</li>
+                    <li>Choose your tiles</li>
+                    <li>Spell out words for points</li>
+                    <li>For 2 to 4 players</li>
+                    <li>Contents: 1x Scrabble board, 100x Letter tiles, 4x Racks, 1x Letter bag & 1x instructions</li>
+                    <li>Board Dimensions: 35.56L x 35.56W x 4.4Hcm</li>
+                </ul>
+               
+        </main>
+      </dev>
+    </body>
+</html>

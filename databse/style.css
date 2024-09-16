@@ -1,0 +1,45 @@
+.topnav {
+    overflow: hidden;
+    background-color: #131212;
+
+
+.logo {
+    float: left;
+    padding: 10px; 
+}
+
+.logo img {
+    height: 40px; 
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #131212;}
+
+li {
+    float: left;
+}
+p {
+    font-size: 20px; 
+    color: rgb(0, 0, 0); 
+    margin-left: 20px; 
+
+}
+
+li a {
+    display: block;
+    color: salmon;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: monospace, 'Lucida Sans';
+    
+}
+
+
+li a:hover {
+    background-color: #717171;
+}
+}
